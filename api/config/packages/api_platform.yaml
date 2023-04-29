@@ -1,6 +1,11 @@
 api_platform:
-    title: Hello API Platform
+    title: Task API Platform
+    description: 'API description'
     version: 1.0.0
+    openapi:
+        contact:
+            name: 'Kuanysh'
+            email: 'kuanish@mail.kz'
     # Mercure integration, remove if unwanted
     mercure: ~
     # Good cache defaults for REST APIs
@@ -10,3 +15,8 @@ api_platform:
             vary: ['Content-Type', 'Authorization', 'Origin']
         extra_properties:
             standard_put: true
+    swagger:
+        api_keys:
+            JWT:
+                name: Authorization
+                type: header
